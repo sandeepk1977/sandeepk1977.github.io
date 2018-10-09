@@ -1,31 +1,31 @@
 # Site settings
 title: "Sandeep Kumar"
-email: jacob@jacobtomlinson.co.uk
-description: "A dark blog theme for Jekyll."
+email: sandeep.k1977@gmail.com
+description: "Sandeep's blogs"
 baseurl: ""
-url: "http://carte-noire.jacobtomlinson.co.uk/"
-title_description: "A dark blog theme for Jekyll focusing on a clear reading experience. Large text and a narrow body makes carte noire a gorgeous read. With excellent code snippet support and integrated tools such as AddThis and Disqus giving your Jekyll blog all the functionality your users expect."
-title_image: "https://www.gravatar.com/avatar/00000000000000000000000000000000?s=500&d=mm"
+url: "https://www.linkedin.com/in/sandeep-kumar-safe-agilist%C2%AE-pmi-acp%C2%AE-csm%C2%AE-pmp%C2%AE-1941ba15/"
+title_description: "Developer, agilist, learner and dreamer. Welcome to my little world."
+title_image: "sandeep.jpg"
 google_analytics: "UA-20365477-4"
-disqus_account: cartenoire
-github_repository: https://github.com/jacobtomlinson/carte-noire
-addthis_id: ra-513c6fa83da6ec67
+disqus_account: sandeepk1977
+github_repository: https://github.com/sandeepk1977/sandeepk1977.github.io
+addthis_id: ra-5bbce3db6ff52e23
 post_limit: 5
 
 # Social usernames/URLs
-twitter_username: _jacobtomlinson
-github_username:  jacobtomlinson
+twitter_username: sandskum
+github_username:  sandeepk1977
 instagram_username: 
 reddit_username: 
-linkedin_link: http://carte-noire.jacobtomlinson.co.uk/
-google_plus_link: http://carte-noire.jacobtomlinson.co.uk/
-stackoverflow_link: http://carte-noire.jacobtomlinson.co.uk/
+linkedin_link: https://www.linkedin.com/in/sandeep-kumar-safe-agilist%C2%AE-pmi-acp%C2%AE-csm%C2%AE-pmp%C2%AE-1941ba15/
+google_plus_link: https://google.com/
+stackoverflow_link: https://google.com
 xing_link:
 facebook_link:
 
 # Footer
-footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://twitter.com/_JacobTomlinson\">Jacob Tomlinson</a>"
-footer_right: "&lt;/&gt; on <a href=\"https://github.com/jacobtomlinson/carte-noire\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
+footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://twitter.com/sandskum\">Sandeep Kumar</a>"
+footer_right: "&lt;/&gt; on <a href=\"https://github.com/sandeepk1977/sandeepk1977.github.io\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
 
 # Build settings
 markdown: kramdown
