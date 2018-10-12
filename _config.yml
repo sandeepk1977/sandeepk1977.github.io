@@ -5,7 +5,7 @@ description: "Sandeep's blogs"
 baseurl: ""
 url: "https://sandeepk1977.github.io/"
 title_description: "Developer, agilist, learner and dreamer. Welcome to my little world."
-title_image: "sandeep.jpg"
+title_image: "images/sandeep.jpg"
 google_analytics: "UA-127173510-1"
 disqus_account: https-sandeepk1977-github-io
 github_repository: https://github.com/sandeepk1977/sandeepk1977.github.io
