@@ -24,7 +24,7 @@ xing_link:
 facebook_link:
 
 # Footer
-footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://twitter.com/sandskum\">Sandeep Kumar</a>"
+footer_left: "Site run by <a href=\"https://twitter.com/sandskum\">Sandeep Kumar</a>"
 footer_right: "&lt;/&gt; on <a href=\"https://github.com/sandeepk1977/sandeepk1977.github.io\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
 
 # Build settings
