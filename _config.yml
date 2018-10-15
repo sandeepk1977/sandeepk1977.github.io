@@ -24,7 +24,8 @@ xing_link:
 facebook_link:
 
 # Footer
-footer_left: "Site run by <a href=\"https://twitter.com/sandskum\">Sandeep Kumar</a>"
+# footer_left: "Site run and maintained by <a href=\"https://twitter.com/sandskum\">Sandeep Kumar</a>"
+footer_left:  "<a href=\"mailto:sandeep.k1977@gmail.com\">Feedback</a> &nbsp; <i class=\"fa fa-envelope-o\"></i>"
 footer_right: "&lt;/&gt; on <a href=\"https://github.com/sandeepk1977/sandeepk1977.github.io\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
 
 # Build settings
