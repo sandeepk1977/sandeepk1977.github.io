@@ -4,7 +4,7 @@
     <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sandeep Kumar</title>
+<title>Blockchain</title>
 <meta name="description" content="Sandeep's blogs">
 
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
@@ -76,76 +76,98 @@
 
     <div class="page-content">
       <div class="wrap">
-      <div class="container-fluid index">
-  <div class="row index all-posts">
-
-    <h1 class="header author-header"></h1>
-    <h2 class="header" itemprop="headline">All posts</h2>
-    <h2 class="header categories" itemprop="headline"><small>grouped by
-
-      <div class="dropdown btn-group">
-        <button class="btn btn-categories dropdown-toggle btn-xs" type="button" data-toggle="dropdown">Categories
-          <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu">
-          <li><a href="/posts/">Years</a></li>
-        </ul>
-      </div>
-
-    </small></h2>
       
-      <div class="col-md-12 content-panel articles">
-        <h2 id="general-ref">general</h2>
-        <ul>
-          
-            
-              <li>
-                <a href=""></a>
-                <small class="hidden-xs"></small>
-              </li>
-            
-          
-            
-              <li>
-                <a href="/general/2018/10/11/boy-and-the-marbles/">A little boy and the marbles</a>
-                <small class="hidden-xs">October 11, 2018</small>
-              </li>
-            
-              <li>
-                <a href="/general/2018/10/10/situation-is-critical/">“The situation is very critical”</a>
-                <small class="hidden-xs">October 10, 2018</small>
-              </li>
-            
-          
 
-        </ul>
+<div class="container-fluid single">
+  <div class="row">
+
+    <div itemscope itemtype="http://schema.org/Article" class="col-md-12 article">
+      
+      <div class="thumb">
+        <img itemprop="image" src="https://i.imgur.com/aRQcGSi.png" alt="Thumbnail: jekyll" />
       </div>
       
-      <div class="col-md-12 content-panel articles">
-        <h2 id="tech-ref">tech</h2>
-        <ul>
-          
-            
-              <li>
-                <a href=""></a>
-                <small class="hidden-xs"></small>
-              </li>
-            
-          
-            
-              <li>
-                <a href="/tech/2018/10/16/blockchain-basics/">Blockchain</a>
-                <small class="hidden-xs">October 16, 2018</small>
-              </li>
-            
-          
 
-        </ul>
+      <h1 class="header" itemprop="name">Blockchain</h1>
+
+      <div class="author">
+        <small><i>
+          
+          on <span itemprop="datePublished" content="2014-08-28">October 16, 2018</span>
+           under tech
+        </i></small>
+      </div>
+
+      <div class="read-time">
+        <small>
+          1 minute read
+        </small>
+      </div>
+
+      <div class="content-panel content">
+
+        
+
+        <span itemprop="articleBody"><p>Basics of blockchain</p>
+</span>
+
+        
+
+        
+        <div class="share">
+          <!-- Go to www.addthis.com/dashboard to customize your tools -->
+          <div class="addthis_sharing_toolbox"></div>
+        </div>
+        
+
+        
+        <div class="tags">
+          <small>
+          <i class="fa fa-tags"></i>
+            tech, blockchain
+          </small>
+        </div>
+        
+
+      </div>
+
+      
+      <div class="content-panel feedback">
+        I <i class="fa fa-heart"></i> feedback.<br />
+        Let me know what you think of this article on twitter <a href="http://www.twitter.com/sandskum">@sandskum</a> or leave a comment below!
       </div>
       
+
+      
+      <div class="content-panel comments">
+        <div id="disqus_thread">
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+      </div>
+      
+
+      
+
+    </div>
 
   </div>
+
 </div>
+
+
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+function disqus_config() { this.experiment.enable_scroll_container = true; }
+var disqus_shortname = "https-sandeepk1977-github-io"; // required: replace example with your forum shortname
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+
 
       </div>
     </div>
@@ -176,48 +198,6 @@
    });
 </script>
 
-
-<script type="text/javascript">
-
-  function setFontSize() {
-
-    var title, dateOfTitle, fontSizeOfTitle, listOfA, listOfSmall, listOfArticlesDiv, divWidth;
-
-    listOfArticlesDiv = document.getElementsByClassName("articles");
-
-    for (i = 0; i < listOfArticlesDiv.length; i++) {
-
-      listOfA = document.getElementsByClassName("articles")[i].getElementsByTagName("a");
-      listOfSmall = document.getElementsByClassName("articles")[i].getElementsByTagName("small");
-
-      divWidth = document.getElementsByClassName("articles")[i].offsetWidth;
-
-      for (k = 0; k < listOfSmall.length; k++) {
-
-        title = $(listOfA[k]);
-        dateOfTitle = $(listOfSmall[k]);
-
-        fontSizeOfTitle = startingFontSize;
-        title.css("font-size", fontSizeOfTitle);
-
-        while (title.width() + dateOfTitle.width() >= divWidth)
-          title.css("font-size", fontSizeOfTitle -= 0.5);
-
-      }
-    }
-  }
-
-  function getStartFontSize() {
-    try {
-      startingFontSize = parseInt($(document.getElementsByClassName("articles")[0].getElementsByTagName("a")[0]).css("font-size"));
-      setFontSize();
-      window.addEventListener('resize', setFontSize, true);
-    } catch (e) {}
-  }
-
-  $(document).ready(getStartFontSize);
-
-</script>
 
 
 
