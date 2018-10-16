@@ -4,7 +4,7 @@
     <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>404</title>
+<title>Sandeep Kumar</title>
 <meta name="description" content="Sandeep's blogs">
 
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
@@ -76,58 +76,36 @@
 
     <div class="page-content">
       <div class="wrap">
-      <div class="container-fluid index error">
-  <div class="row">
+      <div class="container-fluid index">
+  <div class="row index all-posts">
 
-    <div class="col-md-12 content-panel articles">
-      <h1 class="header author-header">404</h1>
+    <h1 class="header author-header">Search</h1>
 
-      <div class="error-text">
-        Sorry but this page doesn't seem to exist.
+    <div id="search-container">
+      <input type="text" id="search-input" placeholder="Type here...">
+      <div class="col-md-12 content-panel articles">
+        <ul id="results-container"><small>Start typing to see some results</small></ul>
       </div>
-
-      <div class="error-text">
-        <a href="/">Home</a> |
-        <a href="/posts/">All Posts</a> |
-        <a href="/search/">Search</a>
-      </div>
-
-      <p class="links">
-  <a href="https://www.twitter.com/sandskum" target="_new"><i class="fa fa-twitter"></i></a>
-  <a href="https://www.linkedin.com/in/sandeep-kumar-safe-agilist%C2%AE-pmi-acp%C2%AE-csm%C2%AE-pmp%C2%AE-1941ba15/" target="_new"><i class="fa fa-linkedin"></i></a>
-  
-  <a href="https://plus.google.com/+SandeepKumars" target="_new"><i class="fa fa-google-plus"></i></a>
-  
-  <a href="https://github.com/sandeepk1977" target="_new"><i class="fa fa-github-alt"></i></a>
-  <a href="https://stackoverflow.com/users/10488369/sandeep-kumar" target="_new"><i class="fa fa-stack-overflow"></i></a>
-  
-  
-  <a href="/feed.xml" target="_new"><i class="fa fa-rss"></i></a>
-</p>
-
-
     </div>
 
   </div>
-
-  <div class="content-panel related">
-    
-      <div class="related-header">
-        <a href="/general/2018/10/11/boy-and-the-marbles/">Suggested Article</a>
-      </div>
-      <div class="title">
-        <a href="/general/2018/10/11/boy-and-the-marbles/">A little boy and the marbles</a>
-      </div>
-      <div class="excerpt">
-         
-          Appreciate your team
-         
-        <a href="/general/2018/10/11/boy-and-the-marbles/">Continue Reading</a>
-      </div>
-    
-  </div>
-
 </div>
+
+<hr class="search-hr" />
+
+<script src="/js/jekyll-search.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+  SimpleJekyllSearch.init({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    dataSource: '/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}<\/a><\/li>',
+    noResultsText: 'No results found',
+    limit: 10,
+    fuzzy: true,
+  })
+</script>
 
       </div>
     </div>

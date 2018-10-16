@@ -4,7 +4,7 @@
     <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>404</title>
+<title>Sandeep Kumar</title>
 <meta name="description" content="Sandeep's blogs">
 
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
@@ -76,57 +76,53 @@
 
     <div class="page-content">
       <div class="wrap">
-      <div class="container-fluid index error">
-  <div class="row">
+      <div class="container-fluid index">
+  <div class="row index all-posts">
 
-    <div class="col-md-12 content-panel articles">
-      <h1 class="header author-header">404</h1>
+    <h1 class="header author-header"></h1>
+    <h2 class="header" itemprop="headline">All posts</h2>
+    <h2 class="header categories" itemprop="headline"><small>grouped by
 
-      <div class="error-text">
-        Sorry but this page doesn't seem to exist.
+      <div class="dropdown btn-group">
+        <button class="btn btn-categories dropdown-toggle btn-xs" type="button" data-toggle="dropdown">Categories
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="/posts/">Years</a></li>
+        </ul>
       </div>
 
-      <div class="error-text">
-        <a href="/">Home</a> |
-        <a href="/posts/">All Posts</a> |
-        <a href="/search/">Search</a>
+    </small></h2>
+      
+      <div class="col-md-12 content-panel articles">
+        <h2 id="general-ref">general</h2>
+        <ul>
+          
+            
+              <li>
+                <a href=""></a>
+                <small class="hidden-xs"></small>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/general/2018/10/11/boy-and-the-marbles/">A little boy and the marbles</a>
+                <small class="hidden-xs">October 11, 2018</small>
+              </li>
+            
+              <li>
+                <a href="/general/2018/10/10/situation-is-critical/">“The situation is very critical”</a>
+                <small class="hidden-xs">October 10, 2018</small>
+              </li>
+            
+          
+
+        </ul>
       </div>
-
-      <p class="links">
-  <a href="https://www.twitter.com/sandskum" target="_new"><i class="fa fa-twitter"></i></a>
-  <a href="https://www.linkedin.com/in/sandeep-kumar-safe-agilist%C2%AE-pmi-acp%C2%AE-csm%C2%AE-pmp%C2%AE-1941ba15/" target="_new"><i class="fa fa-linkedin"></i></a>
-  
-  <a href="https://plus.google.com/+SandeepKumars" target="_new"><i class="fa fa-google-plus"></i></a>
-  
-  <a href="https://github.com/sandeepk1977" target="_new"><i class="fa fa-github-alt"></i></a>
-  <a href="https://stackoverflow.com/users/10488369/sandeep-kumar" target="_new"><i class="fa fa-stack-overflow"></i></a>
-  
-  
-  <a href="/feed.xml" target="_new"><i class="fa fa-rss"></i></a>
-</p>
-
-
-    </div>
+      
 
   </div>
-
-  <div class="content-panel related">
-    
-      <div class="related-header">
-        <a href="/general/2018/10/11/boy-and-the-marbles/">Suggested Article</a>
-      </div>
-      <div class="title">
-        <a href="/general/2018/10/11/boy-and-the-marbles/">A little boy and the marbles</a>
-      </div>
-      <div class="excerpt">
-         
-          Appreciate your team
-         
-        <a href="/general/2018/10/11/boy-and-the-marbles/">Continue Reading</a>
-      </div>
-    
-  </div>
-
 </div>
 
       </div>
@@ -158,6 +154,48 @@
    });
 </script>
 
+
+<script type="text/javascript">
+
+  function setFontSize() {
+
+    var title, dateOfTitle, fontSizeOfTitle, listOfA, listOfSmall, listOfArticlesDiv, divWidth;
+
+    listOfArticlesDiv = document.getElementsByClassName("articles");
+
+    for (i = 0; i < listOfArticlesDiv.length; i++) {
+
+      listOfA = document.getElementsByClassName("articles")[i].getElementsByTagName("a");
+      listOfSmall = document.getElementsByClassName("articles")[i].getElementsByTagName("small");
+
+      divWidth = document.getElementsByClassName("articles")[i].offsetWidth;
+
+      for (k = 0; k < listOfSmall.length; k++) {
+
+        title = $(listOfA[k]);
+        dateOfTitle = $(listOfSmall[k]);
+
+        fontSizeOfTitle = startingFontSize;
+        title.css("font-size", fontSizeOfTitle);
+
+        while (title.width() + dateOfTitle.width() >= divWidth)
+          title.css("font-size", fontSizeOfTitle -= 0.5);
+
+      }
+    }
+  }
+
+  function getStartFontSize() {
+    try {
+      startingFontSize = parseInt($(document.getElementsByClassName("articles")[0].getElementsByTagName("a")[0]).css("font-size"));
+      setFontSize();
+      window.addEventListener('resize', setFontSize, true);
+    } catch (e) {}
+  }
+
+  $(document).ready(getStartFontSize);
+
+</script>
 
 
 
